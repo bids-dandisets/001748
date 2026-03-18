@@ -1,0 +1,17 @@
+{
+    "Name": null,
+    "BIDSVersion": "1.10.1",
+    "HEDVersion": "8.3.0",
+    "Description": null,
+    "DatasetType": "raw",
+    "Authors": null,
+    "License": null,
+    "GeneratedBy": [
+        {
+            "Name": "nwb2bids",
+            "Version": "0.9.1.dev27+gf0fb7253c",
+            "Description": "Tool to reorganize NWB files into a BIDS directory layout.",
+            "CodeURL": "https://github.com/con/nwb2bids"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "identifier": "RemoteInitializationFailure",
+    "title": "Failed to initialize converter on remote Dandiset",
+    "reason": "An error occurred while executing `DatasetConverter.from_remote_dandiset`.\n\nTraceback (most recent call last):\n  File \"/data/dandi/bids-dandisets/nwb2bids/src/nwb2bids/_converters/_dataset_converter.py\", line 85, in from_remote_dandiset\n    dataset_description, _internal_notifications = get_bids_dataset_description(dandiset=dandiset)\n                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"/data/dandi/bids-dandisets/nwb2bids/src/nwb2bids/_converters/_dandi_utils.py\", line 20, in get_bids_dataset_description\n    dataset_description, internal_messages = _get_dataset_description_from_valid_dandiset_metadata(\n                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metadata=metadata\n        ^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/data/dandi/bids-dandisets/nwb2bids/src/nwb2bids/_converters/_dandi_utils.py\", line 57, in _get_dataset_description_from_valid_dandiset_metadata\n    for role in contributor.roleName\n                ^^^^^^^^^^^^^^^^^^^^\nTypeError: 'NoneType' object is not iterable\n",
+    "solution": "Please raise an issue on `nwb2bids`: https://github.com/con/nwb2bids/issues.",
+    "examples": null,
+    "field": null,
+    "data_standards": null,
+    "source_file_paths": null,
+    "target_file_paths": null,
+    "category": "INTERNAL_ERROR",
+    "severity": "ERROR"
+  }
+]
