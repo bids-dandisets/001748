@@ -3,61 +3,61 @@
     "issues": [
       {
         "code": "SUBJECT_FOLDERS",
-        "severity": "warning",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.dataset.SubjectFolders"
+        "rule": "rules.checks.dataset.SubjectFolders",
+        "severity": "warning"
       },
       {
         "code": "README_FILE_MISSING",
-        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.hints.ReadmeFileMissing"
+        "rule": "rules.checks.hints.ReadmeFileMissing",
+        "severity": "ignore"
       },
       {
         "code": "TOO_FEW_AUTHORS",
-        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.hints.TooFewAuthors"
+        "rule": "rules.checks.hints.TooFewAuthors",
+        "severity": "ignore"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "Name",
-        "severity": "error",
-        "location": "/dataset_description.json",
         "issueMessage": "must be string\n\nField description: Name of the dataset.\n",
-        "rule": "rules.dataset_metadata.dataset_description"
+        "rule": "rules.dataset_metadata.dataset_description",
+        "location": "/dataset_description.json",
+        "severity": "error"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "License",
-        "severity": "error",
-        "location": "/dataset_description.json",
         "issueMessage": "must be string\n\nField description: The license for the dataset.\nThe use of license name abbreviations is RECOMMENDED for specifying a license\n(see [Licenses](SPEC_ROOT/appendices/licenses.md)).\nThe corresponding full license text MAY be specified in an additional\n`LICENSE` file.\n",
-        "rule": "rules.dataset_metadata.dataset_description"
+        "rule": "rules.dataset_metadata.dataset_description",
+        "location": "/dataset_description.json",
+        "severity": "error"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "Authors",
-        "severity": "error",
-        "location": "/dataset_description.json",
         "issueMessage": "must be array\n\nField description: List of individuals who contributed to the creation/curation of the dataset.\n",
-        "rule": "rules.dataset_metadata.dataset_description"
+        "rule": "rules.dataset_metadata.dataset_description",
+        "location": "/dataset_description.json",
+        "severity": "error"
       },
       {
         "code": "JSON_KEY_RECOMMENDED",
         "subCode": "SourceDatasets",
-        "severity": "warning",
         "location": "/dataset_description.json",
-        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n",
-        "rule": "rules.dataset_metadata.dataset_description"
+        "severity": "warning",
+        "rule": "rules.dataset_metadata.dataset_description",
+        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "Authors",
-        "severity": "error",
-        "location": "/dataset_description.json",
         "issueMessage": "must be array\n\nField description: List of individuals who contributed to the creation/curation of the dataset.\n",
-        "rule": "rules.dataset_metadata.dataset_authors"
+        "rule": "rules.dataset_metadata.dataset_authors",
+        "location": "/dataset_description.json",
+        "severity": "error"
       }
     ],
     "codeMessages": {
